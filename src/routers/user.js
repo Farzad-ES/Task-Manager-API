@@ -3,7 +3,7 @@ const multer=require('multer')
 const sharp=require('sharp')
 const User=require('../models/user.js')
 const mails=require('../emails/account.js')
-const auth=require('../middleware/authenticaion.js')
+const auth=require('../middleware/authentication.js')
 
 
 const router=new express.Router()
