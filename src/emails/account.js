@@ -19,8 +19,6 @@ const sendWelcomeEmail=async(email, name)=>{
         subject:'Thanks for joining in',
         text:`Welcome to task manager app, ${name}. Let me know how it's going with the app`
     })
-    console.log(info)
-    console.log(nodemailer.getTestMessageUrl(info))
 }
 
 const sendCancelationEmail=async(email, name)=>{
@@ -42,8 +40,6 @@ const sendCancelationEmail=async(email, name)=>{
         subject:'Sorry to see you go!',
         text:`Thanks for using our app, ${name}. Please let us know your feedback to make our app better`
     })
-    console.log(info)
-    console.log(nodemailer.getTestMessageUrl(info))
 }
 
 module.exports={
